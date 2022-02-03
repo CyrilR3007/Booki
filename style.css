@@ -297,7 +297,26 @@ header p {
 	margin-top: 3px;
 }
 
-/*Main*/
+/*Sections*/
+
+.sections {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.section_right {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: #f2f2f2;
+	width: 419.5px;
+	height: 625px;
+	margin-top: 37.5px;
+	padding-top: 25px;
+	border-radius: 20px 20px;
+}
 
 .section_left {
 	position: relative;
@@ -310,14 +329,22 @@ header p {
 	border-radius: 20px 20px;
 }
 
-h1 {
+.section_left h1 {
 	font-family: "raleway-bold";
 	font-size: 20px;
 	margin-left: 50px;
 	margin-top: 23.75px;
 }
 
-/*card*/
+.section_right h1 {
+	position: absolute;
+	font-family: "raleway-bold";
+	font-size: 20px;
+	top: 50px;
+	left: 45px;
+}
+
+/*card Hebergements*/
 
 #all_cards {
 	position: absolute;
@@ -371,8 +398,7 @@ h1 {
 
 .card h3 {
 	font-family: "raleway-bold";
-	font-size: 13px;
-	text-decoration: none;
+	font-size: 14px;
 	margin-top: 0px;
 	margin-bottom: 8px;
 }
@@ -420,4 +446,85 @@ h1 {
 .plus a {
 	text-decoration: none;
 	color: black;
+}
+
+/*cards les plus populaires*/
+
+#all_cards_2 {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	gap: 40px;
+	top: 92px;
+}
+
+.card_2:hover {
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+.card_2 {
+	display: flex;
+	width: 326px;
+	height: 130px;
+	background-color: white;
+	box-shadow: 0px 5px 20px rgb(170, 170, 170);
+	border-radius: 20px 20px;
+}
+
+.card_2_img {
+	position: relative;
+	overflow: hidden;
+}
+
+.card_2_img img {
+	width: 127px;
+	height: 130px;
+	padding: 5px;
+	border-radius: 20px 0px 0px 20px;
+	object-fit: cover;
+}
+
+.card_2_body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 12px;
+	gap: 0px;
+}
+
+.card_2 a {
+	text-decoration: none;
+	color: black;
+}
+
+.card_2 h3 {
+	font-family: "raleway-bold";
+	font-size: 14px;
+	text-decoration: none;
+	margin: 0%;
+}
+
+.card_2_price {
+	margin-top: -30px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.card_2_rating {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2px;
+}
+
+.card_2_rating i {
+	color: #0065fc;
+	font-size: 12px;
+}
+
+.color_star_5 i {
+	color: #d4d4d4;
+	display: flex;
 }
