@@ -5,7 +5,7 @@
 		<title>Booki</title>
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<script
@@ -22,7 +22,7 @@
 
 					<nav>
 						<ul>
-							<li><a href="#Hébergements">Hébergements</a></li>
+							<li class="active"><a href="#Hébergements">Hébergements</a></li>
 							<li><a href="#Activités">Activités</a></li>
 						</ul>
 					</nav>
@@ -36,10 +36,15 @@
 				<div class="formulaire">
 					<i class="fa-solid fa-location-dot"></i>
 					<form method="post" action="traitement.php">
-						<input type="search" placeholder="Marseille, France" /><input
+						<input type="search" placeholder="Marseille, France" />
+						<button type="submit">
+							<i class="fa-solid fa-magnifying-glass hidden-desktop"></i>
+							<span class="hidden-mobile">Rechercher</span>
+						</button>
+						<!-- <input
 							type="button"
 							value="Rechercher"
-						/>
+						/> -->
 					</form>
 				</div>
 
@@ -144,7 +149,7 @@
 										</div>
 									</a>
 									<div class="card_body">
-										<div class="card_1_title">
+										<div class="card_title">
 											<a href="#"><h3>Hôtel les mouettes</h3></a>
 										</div>
 

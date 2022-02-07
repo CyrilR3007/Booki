@@ -122,7 +122,7 @@ header p {
 	outline: none;
 }
 
-.formulaire > form > input[type="button"] {
+.formulaire > form > button {
 	position: absolute;
 	border: none;
 	background-color: #0065fc;
@@ -159,7 +159,7 @@ header p {
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 35px;
-	margin-top: 31px;
+	margin-top: 30px;
 }
 
 #filtres > div {
@@ -233,6 +233,7 @@ header p {
 .section_left {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	background: #f2f2f2;
 	width: 880px;
 	height: 625px;
@@ -283,7 +284,7 @@ header p {
 #all_cards {
 	position: absolute;
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: wrap;
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
@@ -302,6 +303,7 @@ header p {
 	height: 190px;
 	background-color: white;
 	box-shadow: 0px 5px 20px rgb(170, 170, 170);
+	transition: box-shadow 250ms;
 	border-radius: 20px 20px;
 	margin-top: 15px;
 }
@@ -387,10 +389,9 @@ header p {
 #all_cards_2 {
 	position: absolute;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 50px;
 	gap: 40px;
 	top: 92px;
 }
@@ -405,6 +406,7 @@ header p {
 	background-color: white;
 	box-shadow: 0px 5px 20px rgb(170, 170, 170);
 	border-radius: 20px 20px;
+	transition: box-shadow 250ms;
 }
 
 .card_2_img {
@@ -490,6 +492,7 @@ header p {
 
 .container > div:hover {
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 250ms;
 }
 
 .container > div:nth-child(3n + 1) {
@@ -543,12 +546,7 @@ header p {
 
 /*Containers h3*/
 
-.container > div:nth-child(1) > h3,
-.container > div:nth-child(2) > h3,
-.container > div:nth-child(3) > h3,
-.container > div:nth-child(4) > h3,
-.container > div:nth-child(5) > h3,
-.container > div:nth-child(6) > h3 {
+.container h3 {
 	font-family: "raleway-bold";
 	font-size: 15px;
 	text-decoration: none;
@@ -587,4 +585,160 @@ footer a {
 
 footer li {
 	margin-top: 15px;
+}
+
+@media screen and (min-width: 769px) {
+	.hidden-desktop {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hidden-mobile {
+		display: none !important;
+	}
+
+	#bloc_page {
+		width: auto;
+	}
+
+	.logo_heb_act {
+		display: flex;
+		flex-direction: column;
+	}
+	.logo img {
+		height: 50px;
+		margin-left: 30px;
+		margin-top: 12px;
+	}
+
+	nav {
+		margin: 0px;
+		width: 100%;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+	}
+
+	nav li {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		transition: border 250ms;
+	}
+
+	nav li.active,
+	nav li:hover {
+		border-bottom: #0065fc 2px solid;
+	}
+
+	nav a {
+		display: block;
+		font-size: 15px;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-top: none;
+	}
+
+	nav a:hover {
+		border-top: none;
+	}
+
+	header h1 {
+		margin-left: 30px;
+		margin-right: 50px;
+	}
+
+	header p {
+		margin-left: 30px;
+		margin-right: 50px;
+	}
+
+	.formulaire {
+		margin-left: 30px;
+		margin-right: 50px;
+	}
+	.formulaire > form > input[type="button"] {
+		background-color: #0065fc;
+		color: white;
+		border-radius: 15px 15px 15px 15px;
+		width: 52px;
+		height: 51px;
+		font-weight: bold;
+		cursor: pointer;
+		margin-left: -40px;
+	}
+
+	#filtres {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	#info {
+		margin-left: 30px;
+	}
+
+	.sections {
+		flex-wrap: nowrap;
+		flex-direction: column-reverse;
+	}
+
+	.section_right {
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	.section_left {
+		width: 100%;
+		height: 1400px;
+		margin-top: 0px;
+		background-color: white;
+		flex-wrap: wrap;
+	}
+
+	#all_cards {
+		flex-direction: column;
+		gap: 0px;
+	}
+
+	#all_cards_2 {
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.card_2 {
+		width: 80%;
+	}
+
+	#Activités h1 {
+		margin-top: 0px;
+		margin-left: 30px;
+	}
+
+	.container {
+		flex-wrap: nowrap;
+		height: 1900px;
+		gap: 0px;
+	}
+
+	.container > div {
+		width: 90%;
+	}
+
+	footer {
+		flex-direction: column;
+		height: 550px;
+		gap: 50px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
 }
