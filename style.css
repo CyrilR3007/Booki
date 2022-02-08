@@ -385,7 +385,6 @@ header p {
 }
 .card_2 {
 	display: flex;
-
 	width: 326px;
 	height: 130px;
 	background-color: white;
@@ -581,7 +580,7 @@ footer li {
 }
 /*tablettes*/
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 	.hidden-mobile {
 		display: none !important;
 	}
@@ -714,9 +713,13 @@ footer li {
 
 	/*cards*/
 
+	.card_2_img img {
+		width: 150px;
+	}
+
 	#all_cards_2 {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		flex-wrap: wrap;
 	}
 
@@ -777,7 +780,7 @@ footer li {
 
 /*mobile*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.hidden-mobile {
 		display: none !important;
 	}
@@ -897,6 +900,9 @@ footer li {
 
 	/*cards*/
 
+	.card_2_img img {
+		width: 150px;
+	}
 	#all_cards_2 {
 		width: 100%;
 		padding-left: 30px;
