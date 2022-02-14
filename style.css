@@ -51,7 +51,7 @@ p {
 }
 
 .logo img {
-	height: 50px;
+	width: 90%;
 	margin-left: 10px;
 	margin-top: 12px;
 }
@@ -89,7 +89,7 @@ nav a:hover {
 header h1 {
 	font-family: "raleway-bold";
 	font-size: 20px;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 header p {
@@ -220,10 +220,10 @@ header p {
 .sections {
 	position: relative;
 	display: flex;
-
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 25px;
+	gap: 3%;
 }
 
 /*section left*/
@@ -232,7 +232,6 @@ header p {
 	display: flex;
 	flex-wrap: wrap;
 	background: #f2f2f2;
-	width: 880px;
 	border-radius: 20px 20px;
 }
 
@@ -240,7 +239,7 @@ header p {
 	font-family: "raleway-bold";
 	font-size: 20px;
 	margin-top: 60px;
-	margin-left: 50px;
+	margin-left: 30px;
 }
 
 /*section right*/
@@ -278,7 +277,7 @@ header p {
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
-	gap: 45px;
+	gap: 6%;
 	margin-top: 10px;
 }
 
@@ -287,7 +286,7 @@ header p {
 }
 
 .card {
-	width: 230px;
+	width: 27%;
 	height: 190px;
 	background-color: white;
 	box-shadow: 0px 5px 20px rgb(170, 170, 170);
@@ -322,13 +321,13 @@ header p {
 
 .card h3 {
 	font-family: "raleway-bold";
-	font-size: 14px;
+	font-size: 12px;
 	margin-top: 0px;
 	margin-bottom: 8px;
 }
 
 .card_price {
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: normal;
 	margin-bottom: 8px;
 }
@@ -421,13 +420,13 @@ header p {
 
 .card_2 h3 {
 	font-family: "raleway-bold";
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0%;
 }
 
 .card_2_price {
 	margin-top: -30px;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: normal;
 }
 
@@ -464,13 +463,12 @@ header p {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 40px;
 	height: 460px;
 }
 
 .container > div {
 	border-radius: 20px;
-	width: 301px;
+	width: 23%;
 	background-color: white;
 	box-shadow: 0px 5px 20px rgb(170, 170, 170);
 }
@@ -573,9 +571,13 @@ footer li {
 	margin-top: 15px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1220px) {
 	.hidden-desktop {
 		display: none !important;
+	}
+
+	#bloc_page {
+		width: 1220px;
 	}
 }
 /*tablettes*/
